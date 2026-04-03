@@ -430,7 +430,7 @@
                 <div class="border-dark"></div>
                 <p>Have more questions? Reach out below.</p>
             </div>
-            <form action="POST" data-netlify="true" class="form">
+            <form action="insert.php" method="post" name = "myForm" data-netlify="true" class="form">
                 <div class="field">
                     <input type="text" name="name" autocomplete="off" required />
                     <label for="name" class="label-name">
