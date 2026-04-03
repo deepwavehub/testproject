@@ -22,9 +22,10 @@
 				. mysqli_connect_error());
 		}
 		
-		// Taking all 4 values from the form data(input)
+		// Taking all 3 values from the form data(input)
 		$name = $_REQUEST['name'];
 		$email = $_REQUEST['email'];
+		$tel = $_REQUEST['tel'];
 		
 		
 		
@@ -32,7 +33,7 @@
 		// here our table name is Customer
         
 		$sql = "INSERT INTO Customer VALUES ( customerid, '$name',
-			'$email')";
+			'$email', '$tel')";
 		
 		if(mysqli_query($conn, $sql)){
 			echo "<h3>data stored in a database successfully."
